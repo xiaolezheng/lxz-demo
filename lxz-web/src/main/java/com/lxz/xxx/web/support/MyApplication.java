@@ -8,7 +8,7 @@ import org.glassfish.jersey.server.spring.scope.RequestContextFilter;
  * Created by xiaolezheng on 16/9/6.
  */
 public class MyApplication extends ResourceConfig {
-    private static final String PACKAGE = "com.lxz.outer.access.web.endpoint";
+    private static final String PACKAGE = "com.lxz.xxx.web.endpoint";
 
     public MyApplication() {
         register(RequestContextFilter.class);
@@ -18,6 +18,6 @@ public class MyApplication extends ResourceConfig {
         // 注册resource
         packages(PACKAGE);
         // 注册异常转换器
-        register(OuterAccessExceptionMapper.class);
+        register(MyExceptionMapper.class);
     }
 }

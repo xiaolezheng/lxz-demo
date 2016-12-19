@@ -13,7 +13,7 @@ import javax.ws.rs.ext.ExceptionMapper;
  * Created by xiaolezheng on 16/9/6.
  */
 @Slf4j
-public class OuterAccessExceptionMapper implements ExceptionMapper<Exception> {
+public class MyExceptionMapper implements ExceptionMapper<Exception> {
     private final String MEDIA_TYPE = MediaType.APPLICATION_JSON;
 
     @Override
