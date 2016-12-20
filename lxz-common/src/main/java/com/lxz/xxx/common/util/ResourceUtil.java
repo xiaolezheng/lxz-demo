@@ -13,7 +13,7 @@ import java.util.List;
  * Created by xiaolezheng on 16/9/1.
  */
 public final class ResourceUtil {
-    public static List<String> readClassPathFileToLineList(String fileName) {
+    public static List<String> readFileToLineListFromClassPath(String fileName) {
         Preconditions.checkArgument(StringUtils.isNotEmpty(fileName), "文件名称不能为空");
 
         try {
